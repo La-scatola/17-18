@@ -38,13 +38,13 @@
 	// 返回页面中所有li标签
     function getAllListItem() {
         var a= document.getElementsByTagName('li');
-		for (var i = 1; i < a.length; i++) {
+		for (var i = 0; i < a.length; i++) {
 		console.log(a[i]);
 		}
     }
 	function getAllListItem1() {
         var a= document.querySelectorAll('li');
-		for (var i = 1; i < a.length; i++) {
+		for (var i = 0; i < a.length; i++) {
 		console.log(a[i]);
 		}
     }
@@ -108,7 +108,7 @@
     function getActiveLinkContent(sectionId) {
 		var id=document.getElementById(sectionId);
 		var a=id.getElementsByTagName("a");
-		for(var i = 1; i < a.length; i++){
+		for(var i = 0; i < a.length; i++){
 		if (a[i].className=="active")
 		console.log(a[i].textContent);
 		}
@@ -116,7 +116,7 @@
 	function getActiveLinkContent1(sectionId) {
 		var id=document.querySelector(sectionId);
 		var a=id.getElementsByTagName("a");
-		for(var i = 1; i < a.length; i++){
+		for(var i = 0; i < a.length; i++){
 		if (a[i].className=="active")
 		console.log(a[i].textContent);
 		}
